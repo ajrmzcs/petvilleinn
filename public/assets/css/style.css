@@ -798,7 +798,7 @@ ul.slider-pagi {
 }
 
 /* ===========================
- Stats 
+ Stats
 ============================ */
 
 #stats .numscroller {
@@ -830,7 +830,7 @@ ul.slider-pagi {
 }
 
 /* ===========================
- Features 
+ Features
 ============================ */
 
 .features {
@@ -2833,12 +2833,12 @@ button.list-group-item:hover {
 /************ max width 767px *************/
 
 @media (max-width: 767px) {
-	
+
 	.video-text h1 {
 		 font-size:2.3em;
 		 padding:0.5em;
     }
-	
+
 	/* layerslider */
 	.header-wrapper .header-text {
 		white-space: normal;
@@ -3208,4 +3208,19 @@ button.list-group-item:hover {
 	.slide__text {
 		top: 50%;
 	}
+}
+
+.whatsapp-logo {
+    width: auto;
+    height: 2.5rem;
+}
+
+.layout-top-logo {
+    width: auto;
+    height: 5rem;
+}
+
+.layout-bottom-logo {
+    width: auto;
+    height: 8rem;
 }
