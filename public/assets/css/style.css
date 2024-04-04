@@ -3224,3 +3224,7 @@ button.list-group-item:hover {
     width: auto;
     height: 8rem;
 }
+
+.input-validation-error-bg {
+    background-color: #ffcccc !important;
+}

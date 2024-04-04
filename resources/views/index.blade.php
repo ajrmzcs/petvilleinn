@@ -90,10 +90,10 @@
                                 <div class="icon">
                                     <!-- icon -->
                                     <div class="image">
-                                        <img src="{{ asset('img/service1.jpg') }}" class="img-fluid" alt="">
+                                        <img src="{{ asset('img/dog-boarding-service.jpg') }}" class="img-fluid" alt="">
                                     </div>
                                     <div class="info">
-                                        <h4>Exotic Pets</h4>
+                                        <h4>Dog Boarding</h4>
                                         <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
                                         <!-- Button-->
                                         <a class="btn" href="services-single.html">Read More</a>
@@ -109,10 +109,10 @@
                                 <div class="icon">
                                     <!-- icon -->
                                     <div class="image">
-                                        <img src="{{ asset('img/service2.jpg') }}" class="img-fluid" alt="">
+                                        <img src="{{ asset('img/cat-boarding-service.jpg') }}" class="img-fluid" alt="">
                                     </div>
                                     <div class="info">
-                                        <h4>Vet Services</h4>
+                                        <h4>Cat Boarding</h4>
                                         <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
                                         <!-- Button-->
                                         <a class="btn" href="services-single.html">Read More</a>
@@ -131,45 +131,7 @@
                                         <img src="{{ asset('img/service3.jpg') }}" class="img-fluid" alt="">
                                     </div>
                                     <div class="info">
-                                        <h4>Great Products</h4>
-                                        <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
-                                        <!-- Button-->
-                                        <a class="btn" href="services-single.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /box_icon -->
-                        </div>
-                        <!-- /col-12 ends -->
-                        <!-- Feature Box 4  -->
-                        <div class="col-12">
-                            <div class="box_icon m-3">
-                                <div class="icon">
-                                    <!-- icon -->
-                                    <div class="image">
-                                        <img src="{{ asset('img/service4.jpg') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <h4>Pet Hotel</h4>
-                                        <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
-                                        <!-- Button-->
-                                        <a class="btn" href="services-single.html">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /box_icon -->
-                        </div>
-                        <!-- /col-12 ends -->
-                        <!-- Feature Box 5  -->
-                        <div class="col-12">
-                            <div class="box_icon m-3">
-                                <div class="icon">
-                                    <!-- icon -->
-                                    <div class="image">
-                                        <img src="{{ asset('img/service5.jpg') }}" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <h4>Dog Walking</h4>
+                                        <h4>Grooming</h4>
                                         <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
                                         <!-- Button-->
                                         <a class="btn" href="services-single.html">Read More</a>
@@ -262,7 +224,7 @@
                 </div>
                 <!-- /parallax-object1-->
                 <div class=" col-lg-5" >
-                    <img src="{{ asset('img/about-index.png') }}" class="img-fluid" alt="">
+                    <img src="{{ asset('img/index-vertical-dog.jpeg') }}" class="img-fluid" alt="">
                 </div>
                 <!-- /col-lg-5-->
             </div>
@@ -595,19 +557,7 @@
                 </ul>
                 <h4 class="margin1">Send us a Message</h4>
                 <!-- Form Starts -->
-                <div id="contact_form">
-                    <div class="form-group">
-                        <label>Name<span class="required">*</span></label>
-                        <input type="text" name="name" class="form-control input-field" required="">
-                        <label>Email Adress <span class="required">*</span></label>
-                        <input type="email" name="email" class="form-control input-field" required="">
-                        <label>Subject</label>
-                        <input type="text" name="subject" class="form-control input-field" required="">
-                        <label>Message<span class="required">*</span></label>
-                        <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required=""></textarea>
-                    </div>
-                    <button type="submit" id="submit_btn" value="Submit" class="btn center-block">Send message</button>
-                </div>
+                <livewire:contact-form />
                 <!-- Contact results -->
                 <div id="contact_results"></div>
             </div>
@@ -621,6 +571,9 @@
             <h2>Where to Find Us</h2>
         </div>
         <!-- map-->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7198.824691883349!2d-80.47079860617096!3d25.55794473288831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9e8115198d631%3A0xeeec776f6d18abb1!2s17235%20SW%20224th%20St%2C%20Miami%2C%20FL%2033170!5e0!3m2!1ses-419!2sus!4v1712007667505!5m2!1ses-419!2sus" width="100%" height="400rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map-canvas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7198.824691883349!2d-80.47079860617096!3d25.55794473288831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9e8115198d631%3A0xeeec776f6d18abb1!2s17235%20SW%20224th%20St%2C%20Miami%2C%20FL%2033170!5e0!3m2!1ses-419!2sus!4v1712007667505!5m2!1ses-419!2sus" width="100%" height="400rem" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </div>
 </x-guest-layout>

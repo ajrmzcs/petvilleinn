@@ -28,6 +28,8 @@
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <!-- Scripts -->
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body id="page-top">
         <!-- Preloader -->
@@ -160,14 +162,10 @@
         <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
         <!-- Main Js -->
         <script src="{{ asset('js/main.js') }}"></script>
-        <!-- Contact form -->
-        <script src="{{ asset('js/contact.js') }}"></script>
         <!--Other Plugins -->
         <script src="{{ asset('js/plugins.js') }}"></script>
         <!-- Prefix free CSS -->
         <script src="{{ asset('js/prefixfree.js') }}"></script>
-        <!-- Open street maps-->
-        <script src="{{ asset('js/map.js') }}"></script>
         <!--Mail Chimp validator -->
         <script src='{{ asset('js/mc-validate.js') }}'></script>
     </body>
