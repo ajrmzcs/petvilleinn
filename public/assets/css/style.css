@@ -865,7 +865,6 @@ ul.slider-pagi {
 ============================ */
 
 #reviews {
-	background-image: url(../img/reviews1.png);
 	background-repeat: no-repeat;
 	background-position: -10% bottom;
 }
@@ -873,13 +872,6 @@ ul.slider-pagi {
 /*===========================
   Contact
 ============================ */
-
-#contact-index {
-	background: url(../img/contact1.png) no-repeat;
-	background-attachment: fixed;
-	background-position: 0% bottom;
-	background-color: #fff;
-}
 
 #contact-index i,
 #contact i {

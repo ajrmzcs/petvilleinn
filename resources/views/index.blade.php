@@ -8,14 +8,14 @@
         <!--Slider -->
         <div class="slider">
             <!-- Slide 0 -->
-            <div class="slide slide-0 active" style="background-image:url('{{ asset('img/slide0.jpg') }}')">
+            <div class="slide slide-0 active" style="background-image:url('{{ asset('img/main-1.jpg') }}')">
                 <div class="slide__bg"></div>
                 <div class="slide__content my-auto">
                     <div class="slide__overlay">
                     </div>
                     <!-- slide text-->
                     <div class="slide__text">
-                        <h1 class="slide__text-heading">Welcome to PETZ</h1>
+                        <h1 class="slide__text-heading">Welcome to Petville Inn</h1>
                         <div class="hidden-mobile">
                             <p class="lead">Petz is a fun HTML5 Pet Template with many elements for your Pet related website</p>
                             <a href="services.html" class="btn btn-default">our services</a>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <!-- Slide 1 -->
-            <div class="slide slide-1" style="background-image:url('{{ asset('img/slide1.jpg') }}')">
+            <div class="slide slide-1" style="background-image:url('{{ asset('img/main-2.jpg') }}')">
                 <div class="slide__bg"></div>
                 <div class="slide__content">
                     <div class="slide__overlay">
@@ -40,7 +40,7 @@
                 </div>
             </div>
             <!-- Slide 2 -->
-            <div class="slide slide-2" style="background-image:url('{{ asset('img/slide2.jpg') }}')">
+            <div class="slide slide-2" style="background-image:url('{{ asset('img/main-3.jpg') }}')">
                 <div class="slide__bg"></div>
                 <div class="slide__content">
                     <div class="slide__overlay">
@@ -50,7 +50,7 @@
                         <h1 class="slide__text-heading">Amazing Services</h1>
                         <div class="hidden-mobile">
                             <p class="lead">We offer all the best quality products for your best friend.</p>
-                            <a href="about.html" class="btn btn-default">About Us</a>
+                            <a href="{{ route('about') }}" class="btn btn-default">About Us</a>
                         </div>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                                 <div class="icon">
                                     <!-- icon -->
                                     <div class="image">
-                                        <img src="{{ asset('img/service3.jpg') }}" class="img-fluid" alt="">
+                                        <img src="{{ asset('img/grooming-service.jpg') }}" class="img-fluid" alt="">
                                     </div>
                                     <div class="info">
                                         <h4>Grooming</h4>
@@ -284,51 +284,8 @@
         <!-- /container -->
     </section>
     <!-- /section ends -->
-    <div class="container-fluid">
-        <!-- Section Call to action -->
-        <section class="call-to-action small-section bg1" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -80px;" data-bottom-top="background-position: 50% 80px;">
-            <div class="container text-center">
-                <!-- card -->
-                <div class="col-lg-5 bg-darkcolor card">
-                    <div class="col-lg-12">
-                        <h4>Subscribe to our newsletter</h4>
-                        <p>Ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus auguen unc vel lorem.</p>
-                        <!-- Form -->
-                        <div id="mc_embed_signup" class="margin1">
-                            <!-- your form adresss in the line bellow -->
-                            <form action="//yourlist.us12.list-manage.com/subscribe/post?u=04e646927a196552aaee78a7b&id=111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <div class="mc-field-group">
-                                        <div class="input-group">
-                                            <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Your email here" id="mce-EMAIL">
-                                            <span class="input-group-btn">
-                                    <button class="btn" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                                    </span>
-                                        </div>
-                                        <!-- Subscription results -->
-                                        <div id="mce-responses" class="mailchimp">
-                                            <div class="alert alert-danger response" id="mce-error-response"></div>
-                                            <div class="alert alert-success response" id="mce-success-response"></div>
-                                        </div>
-                                    </div>
-                                    <!-- /mc-fiel-group -->
-                                </div>
-                                <!-- /mc_embed_signup_scroll -->
-                            </form>
-                            <!-- /form ends -->
-                        </div>
-                        <!-- /mc_embed_signup -->
-                    </div>
-                    <!-- /col-lg -->
-                </div>
-                <!-- /col-lg -->
-            </div>
-            <!-- /container -->
-        </section>
-        <!-- /Section ends -->
-    </div>
     <!-- /container-fluid --><!-- Section Reviews -->
-    <section id="reviews">
+    <section id="reviews" style="background-image:url('{{ asset('img/review-golden.jpg') }}')">
         <div class="container">
             <div class="section-heading text-center">
                 <h2>Clients Reviews</h2>
@@ -493,7 +450,7 @@
             <div class="col-xl-8 col-lg-12 text-center text-xl-start p-0" data-start="right: 25%;"
                  data-center="right:0%;">
                 <!-- image  -->
-                <img src="{{ asset('img/call1.jpg') }}" class="img-fluid img-rounded" alt="">
+                <img src="{{ asset('img/we-love-pets.jpg') }}" class="img-fluid img-rounded" alt="">
             </div>
             <!-- text box  -->
             <div class="callout-box col-xl-6 offset-xl-5 col-lg-12 bg-darkcolor"  data-start="left: 25%;"
@@ -542,7 +499,7 @@
         <!-- /container-->
     </section>
     <!-- Section Ends--><!-- Section Contact  -->
-    <section id="contact-index">
+    <section id="contact-index" style="background: url('{{ asset('img/contact-us.jpg') }}') no-repeat; background-attachment: fixed;background-position: 0% bottom;background-color: #fff;">
         <div class="container">
             <div class="section-heading">
                 <h2>Contact Us</h2>

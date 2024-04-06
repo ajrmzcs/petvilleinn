@@ -56,21 +56,11 @@
                 <!-- /Hamburger menu -->
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('index') }}">Home</a>
-{{--                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                                Home--}}
-{{--                            </a>--}}
-{{--                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
-{{--                                <li class="dropdown-item" ><a href="index.html">Home with Slider 1</a></li>--}}
-{{--                                <li class="dropdown-item"><a href="index-layerslider1.html">Home with Slider 2</a></li>--}}
-{{--                                <li class="dropdown-item"><a href="index-layerslider2.html">Home with Slider 3</a></li>--}}
-{{--                                <li class="dropdown-item"><a href="index-parallax.html">Home with Parallax</a></li>--}}
-{{--                                <li class="dropdown-item"><a href="index-video.html">Home with Video</a></li>--}}
-{{--                            </ul>--}}
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="{{ route('about') }}">About</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -83,11 +73,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="navbar-nav navbar-right">
-                        <li class="nav-item">
+                    <ul class="navbar-nav mb-2 mb-lg-0 navbar-right">
+                        <li class="nav-item mt-1">
                             <a class="nav-link" href="gallery.html">Gallery</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown mt-1">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Blog
                             </a>
@@ -96,12 +86,12 @@
                                 <li class="dropdown-item"><a href="blog-single.html">Blog Post</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mt-1">
                             <a class="nav-link" href="https://api.whatsapp.com/send?phone=17863180694&text=Hi, I would like to know more about...">
                                 <img src="{{ asset('img/whatsapp-logo.png') }}" class="img-fluid whatsapp-logo" alt="">
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mt-1">
                             <a class="nav-link" href="mailto:info@petville-inn.com"><i class="fa fa-envelope fa-2x" style="color:white"></i></a>
                         </li>
                     </ul>
