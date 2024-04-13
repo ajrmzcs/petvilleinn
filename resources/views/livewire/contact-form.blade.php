@@ -39,3 +39,22 @@
         });
     };
 </script>
+@script
+<script>
+    $wire.on('notification', (e) => {
+        Swal.fire({
+            position: "top-end",
+            icon: e.type,
+            title: e.message,
+            showConfirmButton: false,
+            timer: 2500,
+            didDestroy: () => {
+                // This function will be executed after the alert is shown
+                location.reload();
+                // You can execute any code you want here
+            }
+        });
+    });
+</script>
+@endscript
+

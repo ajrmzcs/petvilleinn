@@ -52,6 +52,6 @@ class ContactForm extends Component
             message: $this->message,
         ));
 
-        dd('DONE');
+        $this->dispatch('notification', type: 'success', message: 'Message successfully sent!');
     }
 }

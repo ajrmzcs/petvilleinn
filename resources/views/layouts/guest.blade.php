@@ -67,24 +67,15 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                                <li class="dropdown-item"> <a href="adoption.html">Dog boarding</a></li>
-                                <li class="dropdown-item"><a href="adopt-single.html">Cat boarding</a></li>
-                                <li class="dropdown-item"><a href="services.html">Grooming</a></li>
+                                <li class="dropdown-item"> <a href="{{ route('dog-boarding') }}">Dog boarding</a></li>
+                                <li class="dropdown-item"><a href="{{ route('cat-boarding') }}">Cat boarding</a></li>
+                                <li class="dropdown-item"><a href="{{ route('grooming') }}">Grooming</a></li>
                             </ul>
                         </li>
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0 navbar-right">
                         <li class="nav-item mt-1">
-                            <a class="nav-link" href="gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item dropdown mt-1">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Blog
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <li class="dropdown-item"><a href="blog.html">Blog Home</a></li>
-                                <li class="dropdown-item"><a href="blog-single.html">Blog Post</a></li>
-                            </ul>
+                            <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                         </li>
                         <li class="nav-item mt-1">
                             <a class="nav-link" href="https://api.whatsapp.com/send?phone=17863180694&text=Hi, I would like to know more about...">
