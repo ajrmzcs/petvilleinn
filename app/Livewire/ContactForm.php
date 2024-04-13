@@ -2,11 +2,17 @@
 
 namespace App\Livewire;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Validation\ValidationException;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
 
 class ContactForm extends Component
 {
+    #[Validate('required|string')]
+    public ?string $captcha = null;
     #[Validate('required|string|max:255')]
     public string $name = '';
     #[Validate('required|email')]
@@ -20,10 +26,32 @@ class ContactForm extends Component
         return view('livewire.contact-form');
     }
 
+    /**
+     * @throws ValidationException
+     */
     public function submit(): void
     {
         $this->validate();
 
-        dd($this->name);
+        $response = Http::post(
+            'https://www.google.com/recaptcha/api/siteverify?secret='.
+            config('services.recaptcha.secret') .
+            '&response=' . $this->captcha
+        );
+
+        $success = $response->json()['success'];
+
+        if (!$success) {
+            dd('IMPLEMENT THIS');
+        }
+
+        Mail::to('antonio@antonioramirez.co')->send(new \App\Mail\ContactForm(
+            name: $this->name,
+            email: $this->email,
+            title: $this->subject,
+            message: $this->message,
+        ));
+
+        dd('DONE');
     }
 }

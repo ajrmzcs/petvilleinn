@@ -156,7 +156,5 @@
         <script src="{{ asset('js/plugins.js') }}"></script>
         <!-- Prefix free CSS -->
         <script src="{{ asset('js/prefixfree.js') }}"></script>
-        <!--Mail Chimp validator -->
-        <script src='{{ asset('js/mc-validate.js') }}'></script>
     </body>
 </html>
