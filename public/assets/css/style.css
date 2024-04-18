@@ -3220,3 +3220,23 @@ button.list-group-item:hover {
 .input-validation-error-bg {
     background-color: #ffcccc !important;
 }
+
+.btn-bounce:hover {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    70% {
+        transform: translateY(-10px);
+    }
+}
+</style>

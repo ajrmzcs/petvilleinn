@@ -28,8 +28,6 @@
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body id="page-top">
         <!-- Preloader -->
@@ -74,18 +72,16 @@
                         </li>
                     </ul>
                     <ul class="navbar-nav mb-2 mb-lg-0 navbar-right">
-                        <li class="nav-item mt-1">
+                        <li class="nav-item m-1">
                             <a class="nav-link" href="{{ route('gallery') }}">Gallery</a>
                         </li>
-                        <li class="nav-item mt-1">
-                            <a class="nav-link" href="https://api.whatsapp.com/send?phone=17863180694&text=Hi, I would like to know more about...">
-                                <img src="{{ asset('img/whatsapp-logo.png') }}" class="img-fluid whatsapp-logo" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item mt-1">
-                            <a class="nav-link" href="mailto:info@petville-inn.com"><i class="fa fa-envelope fa-2x" style="color:white"></i></a>
-                        </li>
                     </ul>
+                    <div class="d-flex gap-4">
+                        <a class="nav-link" href="https://api.whatsapp.com/send?phone=17863180694&text=Hi, I would like to know more about...">
+                            <img src="{{ asset('img/whatsapp-logo.png') }}" class="img-fluid whatsapp-logo btn-bounce" alt="">
+                        </a>
+                        <a class="nav-link" href="mailto:info@petville-inn.com"><i class="fa fa-envelope fa-2x btn-bounce" style="color:white"></i></a>
+                    </div>
                 </div>
             </div>
         </nav>
