@@ -24,6 +24,8 @@
         <link rel="stylesheet" href="{{ asset('vendor/layerslider/css/layerslider.css') }}">
         <!-- Color Style CSS -->
         <link href="{{ asset('styles/maincolors.css') }}" rel="stylesheet">
+        <!-- Sweetalert 2 CSS -->
+        <link href="{{ asset('styles/sweetalert2.min.css') }}" rel="stylesheet">
         <!-- Favicons-->
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
@@ -143,5 +145,7 @@
         <script src="{{ asset('js/plugins.js') }}"></script>
         <!-- Prefix free CSS -->
         <script src="{{ asset('js/prefixfree.js') }}"></script>
+        <!-- SweetAlert 2 -->
+        <script src="{{ asset('js/sweetalert2.min.js') }}"></script>
     </body>
 </html>
