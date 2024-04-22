@@ -223,7 +223,7 @@
                     <img src="{{ asset('img/illustrations/petbowl.png') }}" alt="">
                 </div>
                 <!-- /parallax-object1-->
-                <div class=" col-lg-5" >
+                <div class="mt-4 mt-lg-0 col-lg-5" >
                     <img src="{{ asset('img/index-vertical-dog.jpeg') }}" class="img-fluid" alt="">
                 </div>
                 <!-- /col-lg-5-->
