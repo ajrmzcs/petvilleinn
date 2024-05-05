@@ -17,8 +17,8 @@
                     <div class="slide__text">
                         <h1 class="slide__text-heading">Welcome to Petville Inn</h1>
                         <div class="hidden-mobile">
-                            <p class="lead">Petz is a fun HTML5 Pet Template with many elements for your Pet related website</p>
-                            <a href="services.html" class="btn btn-default">our services</a>
+                            <p class="lead">Where our beloved furry friends are part of our extended family.</p>
+                            <a href="#" class="btn btn-default" onclick="scrollToServices()">Explore our services</a>
                         </div>
                     </div>
                 </div>
@@ -33,8 +33,8 @@
                     <div class="slide__text">
                         <h1 class="slide__text-heading">We Love Pets!</h1>
                         <div class="hidden-mobile">
-                            <p class="lead">We offer all the best quality products for your best friend.</p>
-                            <a href="blog.html" class="btn btn-default">our Blog</a>
+                            <p class="lead">Your pets deserve a safe place while they're away from home. Let us take care of them with love and professionalism.</p>
+                            <a href="{{ route('about') }}" class="btn btn-default">About us</a>
                         </div>
                     </div>
                 </div>
@@ -49,8 +49,8 @@
                     <div class="slide__text">
                         <h1 class="slide__text-heading">Amazing Services</h1>
                         <div class="hidden-mobile">
-                            <p class="lead">We offer all the best quality products for your best friend.</p>
-                            <a href="{{ route('about') }}" class="btn btn-default">About Us</a>
+                            <p class="lead">Make your pet’s lodging experience unforgettable! Take a look some of our regular guests!</p>
+                            <a href="{{ route('gallery') }}" class="btn btn-default">Our Gallery</a>
                         </div>
                     </div>
                 </div>
@@ -67,13 +67,17 @@
     <!-- Section Services-index -->
     <section id="services-index">
         <!-- container -->
-        <div class="container">
+        <div class="container" id="services">
             <div class="section-heading">
-                <h2>Our Services</h2>
+                <h2>Welcome to Petville Inn</h2>
             </div>
             <!-- /section-heading-->
             <div class="col-lg-10 offset-lg-1 text-center">
-                <p>Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus vi tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <p>
+                    At Petville Inn, we specialize in providing top-quality services for the care of your pets. We offer safe and comfortable lodging, engaging recreational routines, and reliable feeding, all rooted in social responsibility and a commitment to animal welfare.
+                    We strive to create a safe, comfortable, and welcoming environment for your pets. Check out our services!
+                </p>
+                <p></p>
             </div>
             <!-- /col-->
         </div>
@@ -94,9 +98,9 @@
                                     </div>
                                     <div class="info">
                                         <h4>Dog Boarding</h4>
-                                        <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
+                                        <p>Trust our team of animal care experts to ensure the well-being and happiness of your doggos during their stay with us.</p>
                                         <!-- Button-->
-                                        <a class="btn" href="services-single.html">Read More</a>
+                                        <a class="btn" href="{{ route('dog-boarding') }}">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -113,9 +117,9 @@
                                     </div>
                                     <div class="info">
                                         <h4>Cat Boarding</h4>
-                                        <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
+                                        <p>Your best friend deserves the best care. Your Cats will be treated as part of our family in our home.</p>
                                         <!-- Button-->
-                                        <a class="btn" href="services-single.html">Read More</a>
+                                        <a class="btn" href="{{ route('cat-boarding') }}">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,9 +136,9 @@
                                     </div>
                                     <div class="info">
                                         <h4>Grooming</h4>
-                                        <p>Nulla vel metus scelerisque ante sollicitudinlorem ipsuet commodo. Cras purus odio, vestibulum in vulputate a Imperdiet interdum donec eget metus auguen unc vel lorem.</p>
+                                        <p>Trust us to care for your faithful companion. Our team is trained to provide the best care and affection.</p>
                                         <!-- Button-->
-                                        <a class="btn" href="services-single.html">Read More</a>
+                                        <a class="btn" href="{{ route('grooming') }}">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -154,15 +158,15 @@
     <section id="about-index" class="bg-lightcolor1">
         <div class="container">
             <div class="section-heading text-center">
-                <h2>About Us</h2>
+                <h2>Who we are</h2>
             </div>
             <!-- row -->
             <div class="row">
                 <div class="col-lg-7">
-                    <h3>For your best friend</h3>
+                    <h3>A home for your best friend</h3>
                     <p>
-                        Pat a lorem ipsuet nibh fusce mollis imperdie tlorem ipuset phas ellus ac sodales Lorem ipsum dolor  Phas ellus ac sodales felis tiam non metus.
-                        vest ibulum orci eget usce mollis imperdiet interdum donec eget metus auguen unc vel lorem ispuet Ibu lum orci eget, viverra elit liquam erat volut pat phas ellus ac sodales Lorem ipsum dolor sit amet, consectetur adipisicing elit uasi quidem minus id iprum omnis.
+                        In our pet resort, we are dedicated to offering all the love and attention your pets deserve.
+                        While staying at their temporary home away from home, we strive to create a warm and familiar environment where your furry friends feel loved and protected.
                     </p>
                     <!-- Accordion -->
                     <div class="accordion mt-4" id="accordion1">
@@ -175,8 +179,8 @@
                             </p>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion1">
                                 <div class="accordion-body">
-                                    <p>Patatemp dolupta orem retibusam qui commolu
-                                        les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.
+                                    <p>
+                                        We are focused on providing support in the placement and adoption of furry companions in situations of abandonment or risk, ensuring their well-being and happiness at every stage of the process. It is our commitment to actively contribute to the rescue, care, and transportation of these animals to a new home, promoting responsible adoption and unconditional love towards pets.
                                     </p>
                                 </div>
                             </div>
@@ -185,13 +189,13 @@
                         <div class="accordion-item">
                             <p class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Mission Statement
+                                    Our Beloved Mission
                                 </button>
                             </p>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion1">
                                 <div class="accordion-body">
-                                    <p>Patatemp dolupta orem retibusam qui commolu
-                                        les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.
+                                    <p>
+                                        Our mission at Petville Inn, is to provide a safe and welcoming environment for pets, ensuring their well-being and happiness at all times, offering the highest quality lodging, care, and grooming services.
                                     </p>
                                 </div>
                             </div>
@@ -200,13 +204,13 @@
                         <div class="accordion-item">
                             <p class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Value added services
+                                    Vision
                                 </button>
                             </p>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordion1">
                                 <div class="accordion-body">
-                                    <p>Patatemp dolupta orem retibusam qui commolu
-                                        les felis tiam non metus ali quam eros Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci eget, viverra elit.
+                                    <p>
+                                        Our vision is to be recognized as the ideal haven for pets, where every furry friend feels at home, receiving personalized attention, affection, and exceptional care during their stay wit us. Because every furry friend deserves the best! ❤️
                                     </p>
                                 </div>
                             </div>
@@ -228,58 +232,6 @@
                 </div>
                 <!-- /col-lg-5-->
             </div>
-            <!-- /row -->
-            <div class="row margin1 text-center">
-                <!-- item 1 -->
-                <div class="features col-lg-3">
-                    <div class="col-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-dog-and-pets-house"></i>
-                    </div>
-                    <div class="col-12">
-                        <h5>Housing</h5>
-                        <p>Aenean lacinia bibendum nulla sed consectetur ras mattis consectetur purus sit amet fermentum sociis natoque penatibus et magnis.</p>
-                    </div>
-                </div>
-                <!-- /col-lg-3 -->
-                <!-- item 2 -->
-                <div class="features col-lg-3">
-                    <div class="col-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-dog-in-front-of-a-man"></i>
-                    </div>
-                    <div class="col-12">
-                        <h5>High Quality</h5>
-                        <p>Aenean lacinia bibendum nulla sed consectetur ras mattis consectetur purus sit amet fermentum sociis natoque penatibus et magnis.</p>
-                    </div>
-                </div>
-                <!-- /col-lg-3 -->
-                <!-- item 3 -->
-                <div class="features col-lg-3">
-                    <div class="col-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-veterinarian-hospital"></i>
-                    </div>
-                    <div class="col-12">
-                        <h5>Vet Services</h5>
-                        <p>Aenean lacinia bibendum nulla sed consectetur ras mattis consectetur purus sit amet fermentum sociis natoque penatibus et magnis.</p>
-                    </div>
-                </div>
-                <!-- /col-lg-3 -->
-                <!-- item 1 -->
-                <div class="features col-lg-3">
-                    <div class="col-12 big-icon">
-                        <!-- icon -->
-                        <i class="flaticon-animals-3"></i>
-                    </div>
-                    <div class="col-12">
-                        <h5>Special Care</h5>
-                        <p>Aenean lacinia bibendum nulla sed consectetur ras mattis consectetur purus sit amet fermentum sociis natoque penatibus et magnis.</p>
-                    </div>
-                </div>
-                <!-- /col-lg-3 -->
-            </div>
-            <!-- /row -->
         </div>
         <!-- /container -->
     </section>
@@ -455,8 +407,11 @@
             <!-- text box  -->
             <div class="callout-box col-xl-6 offset-xl-5 col-lg-12 bg-darkcolor"  data-start="left: 25%;"
                  data-center="left:0%;">
-                <h3>We Love Pets</h3>
-                <p>Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus vi tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <h3>We are here for your Pets</h3>
+                <p>
+                    At Petville Inn, we provide a temporary home for your beloved pets while they are away from home.
+                    Trust us to take care of your furry friend and become part of our family!
+                </p>
                 <a href="contact.html" class="btn">Contact us</a>
             </div>
             <!-- /callout-box  -->
@@ -474,22 +429,22 @@
                 <div class="row text-center">
                     <div class="col-lg-6 col-xl-3">
                         <!-- Number 1 -->
-                        <div class="numscroller" data-slno='1' data-min='0' data-max='180' data-delay='20' data-increment="19">0</div>
+                        <div class="numscroller" data-slno='1' data-min='0' data-max='25' data-delay='20' data-increment="19">0</div>
                         <h5>Customers</h5>
                     </div>
                     <div class="col-lg-6 col-xl-3">
                         <!-- Number 2 -->
-                        <div class="numscroller" data-slno='1' data-min='0' data-max='16' data-delay='10' data-increment="9">0</div>
+                        <div class="numscroller" data-slno='1' data-min='0' data-max='5' data-delay='10' data-increment="9">0</div>
                         <h5>Professionals</h5>
                     </div>
                     <div class="col-lg-6 col-xl-3">
                         <!-- Number 3 -->
-                        <div class="numscroller" data-slno='1' data-min='0' data-max='67' data-delay='20' data-increment="19">0</div>
+                        <div class="numscroller" data-slno='1' data-min='0' data-max='55' data-delay='20' data-increment="19">0</div>
                         <h5>Pets Hosted</h5>
                     </div>
                     <div class="col-lg-6 col-xl-3">
                         <!-- Number 4 -->
-                        <div class="numscroller" data-slno='1' data-min='0' data-max='50' data-delay='10' data-increment="9">0</div>
+                        <div class="numscroller" data-slno='1' data-min='0' data-max='3' data-delay='10' data-increment="9">0</div>
                         <h5>Products</h5>
                     </div>
                 </div>
@@ -533,4 +488,10 @@
         </div>
 
     </div>
+    <script>
+        function scrollToServices() {
+            var target = document.getElementById('services');
+            target.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </x-guest-layout>

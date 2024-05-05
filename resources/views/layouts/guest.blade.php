@@ -32,6 +32,7 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     </head>
     <body id="page-top">
+        <div style="position:fixed;top:0px;left:0px;width:0;height:0;" id="scrollzipPoint"></div>
         <!-- Preloader -->
         <div id="preloader">
             <div class="spinner">

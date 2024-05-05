@@ -1,7 +1,7 @@
 <x-guest-layout>
     <!-- Section Gallery -->
     <section id="gallery" class="pages">
-        <div class="jumbotron"  data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -80px;" data-bottom-top="background-position: 50% 80px;">
+        <div class="jumbotron gallery-header"  data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -80px;" data-bottom-top="background-position: 50% 80px;">
             <!-- Heading -->
             <div class="jumbo-heading"  data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -80px;" data-bottom-top="background-position: 50% 80px;">
                 <h1>Gallery</h1>
@@ -14,10 +14,13 @@
                     <a class="nav-link active" href="#" data-bs-toggle="tab" data-filter="*">All</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="tab" data-filter=".dogcat">Dogs and cats</a>
+                    <a class="nav-link" href="#" data-bs-toggle="tab" data-filter=".dog">Dogs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="tab" data-filter=".other">Other pets</a>
+                    <a class="nav-link" href="#" data-bs-toggle="tab" data-filter=".cat">Cats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="tab" data-filter=".facilities">Facilities</a>
                 </li>
             </ul>
             <!-- /ul -->
@@ -25,139 +28,57 @@
             <div class="row">
                 <div class="col-lg-12 margin1">
                     <div id="lightbox">
-                        <!-- Image 1 -->
-                        <div class="col-lg-4 col-md-6 dogcat">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery1.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery1.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
+                        <!-- Dogs -->
+                        @php
+                            $dogIndexes = range(1,6);
+                        @endphp
+                        @foreach($dogIndexes as $index)
+                            <div class="col-lg-4 col-md-6 dog">
+                                <div class="portfolio-item">
+                                    <div class="gallery-thumb">
+                                        <img class="img-fluid" src="{{ asset('img/gallery/dogs/dogs'.$index.'.jpg') }}" alt="">
+                                        <span class="overlay-mask"></span>
+                                        <a href="{{ asset('img/gallery/dogs/dogs'.$index.'.jpg') }}" class="link centered" title="">
+                                            <i class="fa fa-expand"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Image 2 -->
-                        <div class="col-lg-4 col-md-6 other">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery2.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery2.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
+                        @endforeach
+                        <!-- End of Dogs -->
+                        <!-- Cats -->
+                        @php
+                            $catIndexes = range(1,6);
+                        @endphp
+                        @foreach($catIndexes as $index)
+                            <div class="col-lg-4 col-md-6 cat">
+                                <div class="portfolio-item">
+                                    <div class="gallery-thumb">
+                                        <img class="img-fluid" src="{{ asset('img/gallery/cats/cats'.$index.'.jpg') }}" alt="">
+                                        <span class="overlay-mask"></span>
+                                        <a href="{{ asset('img/gallery/cats/cats'.$index.'.jpg') }}" class="link centered" title="">
+                                            <i class="fa fa-expand"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Image 3 -->
-                        <div class="col-lg-4 col-md-6 other">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery3.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery3.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
+                        @endforeach
+                        <!-- End of Cats -->
+                        <!-- Facilities -->
+                        @php
+                            $facilityIndexes = range(1,7);
+                        @endphp
+                        @foreach($facilityIndexes as $index)
+                            <div class="col-lg-4 col-md-6 facilities">
+                                <div class="portfolio-item">
+                                    <div class="gallery-thumb">
+                                        <img class="img-fluid" src="{{ asset('img/gallery/facilities/facilities'.$index.'.jpg') }}" alt="">
+                                        <span class="overlay-mask"></span>
+                                        <a href="{{ asset('img/gallery/facilities/facilities'.$index.'.jpg') }}" class="link centered" title="">
+                                            <i class="fa fa-expand"></i></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Image 4 -->
-                        <div class="col-lg-4 col-md-6 dogcat">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery4.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery4.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 5 -->
-                        <div class="col-lg-4 col-md-6 dogcat">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery5.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery5.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 6 -->
-                        <div class="col-lg-4 col-md-6 dogcat">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery6.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery6.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 7 -->
-                        <div class="col-lg-4 col-md-6 dogcat">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery7.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery7.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 8 -->
-                        <div class="col-lg-4 col-md-6 other">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery8.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery8.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 9 -->
-                        <div class="col-lg-4 col-md-6 other">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery9.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery9.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 10 -->
-                        <div class="col-lg-4 col-md-6 dogcat">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery10.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery10.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 11 -->
-                        <div class="col-lg-4 col-md-6 other">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery11.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery11.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Image 12 -->
-                        <div class="col-lg-4 col-md-6 dogcat">
-                            <div class="portfolio-item">
-                                <div class="gallery-thumb">
-                                    <img class="img-fluid" src="{{ asset('img/gallery12.jpg') }}" alt="">
-                                    <span class="overlay-mask"></span>
-                                    <a href="{{ asset('img/gallery12.jpg') }}" class="link centered" title="You can add caption to pictures.">
-                                        <i class="fa fa-expand"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!--image 12 ends -->
+                        @endforeach
+                        <!-- End of Facilities -->
                     </div>
                     <!-- /lightbox-->
                 </div>

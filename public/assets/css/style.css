@@ -811,7 +811,7 @@ ul.slider-pagi {
 }
 
 #stats {
-	background-image: url(../img/illustrations/bones.png), url(../img/stats.png), url(../img/illustrations/bones1.png);
+	background-image: url(../img/illustrations/bones.png), url(../img/stats-dog.jpg), url(../img/illustrations/bones1.png);
 	animation: dog-bones-falling 9s linear infinite;
 	animation-direction: normal;
 	background-repeat: no-repeat;
@@ -2368,6 +2368,26 @@ blockquote:before {
 	background: url(../img/jumbotron.jpg);
 	border-bottom-left-radius: 25%;
 	border-bottom-right-radius: 25%;
+}
+
+.gallery-header {
+    background: url(../img/gallery-header.jpg) !important;
+}
+
+.about-header {
+    background: url(../img/about-header.jpg) !important;
+}
+
+.dogboarding-header {
+    background: url(../img/dogboarding-header.jpg) !important;
+}
+
+.catboarding-header {
+    background: url(../img/catboarding-header.jpg) !important;
+}
+
+.grooming-header {
+    background: url(../img/grooming-header.jpg) !important;
 }
 
 .jumbotron .jumbo-heading {
