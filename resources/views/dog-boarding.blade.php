@@ -20,7 +20,7 @@
                             A familiar environment for your pet, with spaces suitable for safe and cozy rest, where they will feel pampered and cared like at home.
                         </p>
                         <p>
-                            Our dog boarding facility guarantees a cozy and secure environment where your doggo will receive attention and specialized care. The dogs will have their own space designed for comfort and safety, with appropriate resting areas and constant supervision.
+                            Our dog boarding facility guarantees a secure environment where your doggos will have their own space designed for comfort and safety, with appropriate resting areas and constant supervision.
                         </p>
                     </div>
                 </div>
