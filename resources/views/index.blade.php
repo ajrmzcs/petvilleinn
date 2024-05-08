@@ -182,6 +182,10 @@
                                     <p>
                                         We are focused on providing support in the placement and adoption of furry companions in situations of abandonment or risk, ensuring their well-being and happiness at every stage of the process. It is our commitment to actively contribute to the rescue, care, and transportation of these animals to a new home, promoting responsible adoption and unconditional love towards pets.
                                     </p>
+                                    <p>
+                                        We are proud to partner with <a href="https://www.miamidade.gov/global/service.page?Mduid_service=ser159925122910773" target="_blank">Miami Dade shelter</a> and
+                                        <a href="https://petorphansmiami.com/" target="_blank">Pet Orphans Miami</a> in our efforts to rescue, care for, and find loving homes for dogs and cats in need. Together, we are making a meaningful impact in the lives of these furry friends!
+                                    </p>
                                 </div>
                             </div>
                         </div>

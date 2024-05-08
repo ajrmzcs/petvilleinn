@@ -19,6 +19,9 @@
                         <p>
                             Our lodging for cats includes personalized attention, comfortable spaces, and activities tailored to their needs and preferences.
                         </p>
+                        <p>
+                            For our feline friends, we offer safe spaces where your cat will spend a great time while staying with us. We have play areas and resting spaces for proper feeding and a healthy stimulation.
+                        </p>
                     </div>
                 </div>
             </div>
