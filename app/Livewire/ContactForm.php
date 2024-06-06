@@ -42,7 +42,7 @@ class ContactForm extends Component
         $success = $response->json()['success'];
 
         if (!$success) {
-            dd('IMPLEMENT THIS');
+            $this->dispatch('notification', type: 'error', message: 'There was a problem sending the form!');
         }
 
         Mail::to('antonio@antonioramirez.co')->send(new \App\Mail\ContactForm(
